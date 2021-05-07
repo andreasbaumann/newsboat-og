@@ -1,3 +1,13 @@
+# Changes for newsboat-og
+
+## 2.13.1 - 2021-05-07
+
+Forked as non-Rust maintainance branch.
+
+### Backported
+
+- db70049f436a965767e8a1273389e1be92e946fa: stubs for TRUE/FALSE drop in json-c
+
 # Changes for Newsboat
 
 ## 2.13 - 2018-09-22
