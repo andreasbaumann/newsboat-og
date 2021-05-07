@@ -1,19 +1,16 @@
-Newsboat [![Build Status](https://travis-ci.org/newsboat/newsboat.svg?branch=master)](https://travis-ci.org/newsboat/newsboat) [![Coverage Status](https://coveralls.io/repos/github/newsboat/newsboat/badge.svg?branch=master)](https://coveralls.io/github/newsboat/newsboat?branch=master) [![Coverity Scan Build Status](https://scan.coverity.com/projects/15567/badge.svg)](https://scan.coverity.com/projects/newsboat-newsboat)
-========
+newsboat-og
+===========
+
+Newsboat-og is a fork of Newsboat (https://github.com/newsboat/newsboat) in
+it's last version before rustification (version 2.13). The name for "old gen".
+This fork tries to keep the C/C++ implementation alive for platforms lacking
+a rust compiler.
 
 Newsboat is a fork of Newsbeuter, an RSS/Atom feed reader for the text console.
 The only difference is that Newsboat is actively maintained while Newsbeuter
 isn't.
 
-Downloading
------------
-
-You can download the latest version of Newsboat from the official site:
-https://newsboat.org/
-
-Alternatively, you can check out the latest version from the Git repository:
-
-    git clone git://github.com/newsboat/newsboat.git
+If you want the modern version of Newsboat head to https://github.com/newsboat/newsboat.
 
 Dependencies
 ------------
@@ -54,12 +51,7 @@ Support
   [documentation](https://newsboat.org/releases/2.13/docs/newsboat.html) and
   [FAQ](https://newsboat.org/releases/2.13/docs/faq.html)
 * Bugs and whatnot should be reported to the
-  [issue tracker](https://github.com/newsboat/newsboat/issues)
-* Drop us a line at
-  [newsboat mailing list](http://groups.google.com/group/newsboat)
-* Chat with developers and fellow users on #newsboat at
-  [Freenode](https://freenode.net) ([webchat
-  available!](https://webchat.freenode.net/?channels=newsboat))
+  [issue tracker](https://github.com/andreasbaumann/newsboat-og/issues)
 
 Development
 -----------
@@ -81,3 +73,8 @@ License
 
 Newsboat is licensed under [the MIT
 license](https://opensource.org/licenses/MIT); see the LICENSE file.
+
+Maintainers
+-----------
+
+The maintainer of newsboat-og is Andreas Baumann <mail@andreasbaumann.cc>
