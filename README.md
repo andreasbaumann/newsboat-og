@@ -1,16 +1,18 @@
 newsboat-og
 ===========
 
-Newsboat-og is a fork of Newsboat (https://github.com/newsboat/newsboat) in
-it's last version before rustification (version 2.13). The name for "old gen".
-This fork tries to keep the C/C++ implementation alive for platforms lacking
-a rust compiler.
+Newsboat-og is a fork of Newsboat (https://github.com/newsboat/newsboat)
+in its last version before rustification (version 2.13). The name "-og"
+stands for "old gen". This fork tries to keep the C/C++ implementation
+alive for platforms lacking a rust compiler.
 
 Newsboat is a fork of Newsbeuter, an RSS/Atom feed reader for the text console.
 The only difference is that Newsboat is actively maintained while Newsbeuter
 isn't.
 
-If you want the modern version of Newsboat head to https://github.com/newsboat/newsboat.
+If you want the modern version of Newsboat head to
+
+https://github.com/newsboat/newsboat.
 
 Dependencies
 ------------
