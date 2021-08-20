@@ -4,6 +4,9 @@
 
 ## Bug Fixes
 
+- Fix include guards in urlreader.h
+
 ## Features
 
 - BROWSER env instead of hard-coded lynx
+- podcast download-filename
