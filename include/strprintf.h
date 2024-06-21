@@ -30,7 +30,7 @@ public:
 		if (len <= sizeof(buffer)) {
 			result = buffer;
 		} else {
-			std::unique_ptr<char> buf(new char[len]);
+			std::unique_ptr<char[]> buf(new char[len]);
 			snprintf(buf.get(), len, format.c_str(), "");
 			result = buf.get();
 		}
@@ -70,7 +70,7 @@ public:
 		if (len <= sizeof(buffer)) {
 			result = buffer;
 		} else {
-			std::unique_ptr<char> buf(new char[len]);
+			std::unique_ptr<char[]> buf(new char[len]);
 			snprintf(
 				buf.get(), len, local_format.c_str(), argument);
 			result = buf.get();
