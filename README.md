@@ -4,7 +4,11 @@ newsboat-og
 Newsboat-og is a fork of Newsboat (https://github.com/newsboat/newsboat)
 in its last version before rustification (version 2.13). The name "-og"
 stands for "old gen". This fork tries to keep the C/C++ implementation
-alive for platforms lacking a rust compiler.
+alive for platforms lacking a rust compiler. Also we try to stick to
+C++11 and do only minimal patching.
+
+Our published releases will be 2.13.1, 2.13.2, etc. to avoid confusion with
+the newsboat releases (which are 2.14 and higher).
 
 Newsboat is a fork of Newsbeuter, an RSS/Atom feed reader for the text console.
 The only difference is that Newsboat is actively maintained while Newsbeuter
