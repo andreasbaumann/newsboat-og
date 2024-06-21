@@ -252,7 +252,7 @@ TEST_CASE(
 	std::unordered_set<std::string> url_set;
 	std::string test_url = "http://test_url";
 	std::string line;
-	int itemCount = 6;
+	unsigned int itemCount = 6;
 
 	configcontainer cfg;
 	cfg.set_configvalue("browser", "echo %u >> " + browserfile.getPath());
@@ -261,7 +261,7 @@ TEST_CASE(
 
 	std::shared_ptr<rss_feed> feed = std::make_shared<rss_feed>(&rsscache);
 
-	for (int i = 0; i < itemCount; i++) {
+	for (unsigned int i = 0; i < itemCount; i++) {
 		std::shared_ptr<rss_item> item =
 			std::make_shared<rss_item>(&rsscache);
 		item->set_link(test_url + std::to_string(i));
@@ -278,8 +278,8 @@ TEST_CASE(
 
 	SECTION("unread >= max-browser-tabs")
 	{
-		int maxItemsToOpen = 4;
-		int openedItemsCount = 0;
+		unsigned int maxItemsToOpen = 4;
+		unsigned int openedItemsCount = 0;
 		cfg.set_configvalue(
 			"max-browser-tabs", std::to_string(maxItemsToOpen));
 
@@ -303,8 +303,8 @@ TEST_CASE(
 
 	SECTION("unread < max-browser-tabs")
 	{
-		int maxItemsToOpen = 9;
-		int openedItemsCount = 0;
+		unsigned int maxItemsToOpen = 9;
+		unsigned int openedItemsCount = 0;
 		cfg.set_configvalue(
 			"max-browser-tabs", std::to_string(maxItemsToOpen));
 
