@@ -42,6 +42,8 @@ void poddlthread::operator()()
 	run();
 }
 
+#define MAKE_LIBCURL_VERSION(major, minor, patch) ((major)*0x10000 + (minor)*0x100 + (patch))
+
 void poddlthread::run()
 {
 	// are we resuming previous download?
@@ -61,8 +63,13 @@ void poddlthread::run()
 
 	// set up progress notification:
 	curl_easy_setopt(easyhandle, CURLOPT_NOPROGRESS, 0);
+#if LIBCURL_VERSION_NUM >= MAKE_LIBCURL_VERSION(7, 32, 0)
+	curl_easy_setopt(
+		easyhandle, CURLOPT_XFERINFOFUNCTION, progress_callback);
+#else
 	curl_easy_setopt(
 		easyhandle, CURLOPT_PROGRESSFUNCTION, progress_callback);
+#endif
 	curl_easy_setopt(easyhandle, CURLOPT_PROGRESSDATA, this);
 
 	// set up max download speed
