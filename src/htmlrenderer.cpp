@@ -88,7 +88,6 @@ void htmlrenderer::render(std::istream& input,
 	std::vector<linkpair>& links,
 	const std::string& url)
 {
-	unsigned int image_count = 0;
 	std::string curline;
 	int indent_level = 0;
 	bool inside_li = false, is_ol = false, inside_pre = false;
@@ -261,7 +260,6 @@ void htmlrenderer::render(std::istream& input,
 							_("image"),
 							link_num));
 					}
-					image_count++;
 				}
 			} break;
 
